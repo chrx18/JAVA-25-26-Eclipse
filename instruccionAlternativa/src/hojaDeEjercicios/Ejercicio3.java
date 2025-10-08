@@ -1,4 +1,4 @@
-package ejerciciosAlternativa;
+package hojaDeEjercicios;
 
 import java.util.Scanner;
 
