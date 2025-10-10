@@ -10,10 +10,10 @@ public class Ejercicio4 {
 //		primera o última cifra coincide con la primera o última cifra del número
 //		agraciado en el sorteo.
 //
-//		Introduciendo: 23745 y premiado es 29348
+//		Introduciendo: 23745 y premiado es 29348zz
 //		Da como salida: Si tiene reintegro
 		
-		final int numeroPremiado = 12345;
+        int numeroPremiado = (int)(Math.random() * 90000) + 10000;
 		
 		Scanner sc = new Scanner (System.in);
 		
@@ -22,17 +22,19 @@ public class Ejercicio4 {
 
 		
 		int ultimonumeroINTR = numeroIntroducido % 10;
-		int primernumeroINTR = numeroIntroducido / 1000;
+		int primernumeroINTR = numeroIntroducido / 10000;
 		
 		int ultimonumeroPRE = numeroPremiado % 10;
-		int primernumeroPRE = numeroPremiado / 1000;
+		int primernumeroPRE = numeroPremiado / 10000;
 		
-	if (ultimonumeroPRE == ultimonumeroINTR || primernumeroINTR == primernumeroPRE) {
-		System.out.println("HAS GANADO!!!");
+	if (numeroPremiado == numeroIntroducido) {
+		System.out.println("HAS GANADO!!!!!!!!!!!!!!!!!!");
+	} else if (ultimonumeroPRE == ultimonumeroINTR || primernumeroINTR == primernumeroPRE){
+		System.out.println("Tienes reintegro");
 	} else {
-		System.out.println("HAS PERDIDO");
+		System.out.println("Has perdido :(");
 	}
-
+		System.out.println("El numero premiado era: " + numeroPremiado);
 	}
 
 }

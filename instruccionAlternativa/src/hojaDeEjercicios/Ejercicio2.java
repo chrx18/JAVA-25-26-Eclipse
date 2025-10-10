@@ -22,9 +22,9 @@ public class Ejercicio2 {
 	        System.out.print("Introduce los minutos: ");
 	        int minutos = sc.nextInt();
 
-	        System.out.print("Introduce los segundos: ");                            //ATENDER EXPLICACION
+	        System.out.print("Introduce los segundos: ");
 	        int segundos = sc.nextInt();
-
+/*
 	        // Normalizar segundos a minutos
 	        int minutosExtra = segundos / 60;
 	        int segundosRestantes = segundos % 60;
@@ -40,6 +40,18 @@ public class Ejercicio2 {
 	        int horasFinales = horas + horasExtra;
 
 	        // Mostrar resultado
-	        System.out.println("Tiempo normalizado: " + horasFinales + " Horas, " + minutosRestantes + " Minutos, " + segundosRestantes + " Segundos");
+	        System.out.println("Tiempo normalizado: " + horasFinales + " Horas, " + minutosRestantes + " Minutos, " + segundosRestantes + " Segundos"); */
+	        
+	        
+	        if (segundos> 59) {
+	        	minutos += segundos / 60; //añado los minutos que puedo sacar de los segundos
+	        	segundos = segundos & 60; //resto de los segundos
+	        }
+	        if (minutos> 59) {
+	        	horas += minutos / 60; //añado las horas que puedo sacar de los minutos
+	        	minutos = minutos & 60; // resto de los minutos
+	        }
+	        
+	        System.out.println("Tiempo correcto: " + horas + ":" + minutos + ":" + segundos);
 	    }
 	}

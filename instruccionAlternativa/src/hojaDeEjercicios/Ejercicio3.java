@@ -9,6 +9,7 @@ public class Ejercicio3 {
 //		dividir el número entre 23(división entera), luego multiplicarlo por 23 y restar el
 //		resultado del valor original. La letra asociada al número vendrá dada por este
 //		resto en función de la siguiente tabla:
+		
 //		0 T 1 R 2 W 3 A 4 G 5 M
 //		6 Y 7 F 8 P 9 D 10 X 11 B
 //		12 N 13 J 14 Z 15 S 16 Q 17 V
@@ -95,7 +96,6 @@ public class Ejercicio3 {
 			break;
 		default:
 			System.out.println("INCORRECTO");
-			
 			
 		}
 
