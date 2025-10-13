@@ -24,6 +24,8 @@ public class Ejercicio7 {
 			System.out.println("El numero tiene 4 cifras");
 		} else if (numero < 100000) {
 			System.out.println("El numero tiene 5 cifras");
+		} else {
+			System.out.println("NUMERO INCORRECTO");
 		}
 
 	}
