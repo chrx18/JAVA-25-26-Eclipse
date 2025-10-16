@@ -7,12 +7,10 @@ public class Ejercicio8 {
 	public static void main(String[] args) {
 		// TODO Crea un programa que pida cual es el radio de una circunferencia y nos
 		// calcule cual es la longitud y el área.
-		
-		
-		
-		
-		
 		// Pido el radio
+		
+		
+		
 		Scanner sc = new Scanner (System.in);
 		
 		System.out.println("Introduce el radio de la circunferencia: ");
