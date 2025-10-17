@@ -29,21 +29,7 @@ public class Ejercicio8 {
 		
 		System.out.println("Radio: " + radio);
 		System.out.println("Longitud: " + longitud);
-		System.out.println("Area: " + area);
-		
-		
-		
-		
-		
-		
-		
-
-		
-		
-		
-		
-		
-		
+		System.out.println("Area: " + area);		
 	}
 
 }
