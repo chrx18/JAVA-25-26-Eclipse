@@ -4,9 +4,10 @@ import java.util.Scanner;
 
 public class SumarSerieDeNumeros {
     public static void main(String[] args) {
+    	
         Scanner sc = new Scanner(System.in);
         double suma = 0;
-        int contador = 0;
+        int contador = 1;
         double objetivo;
 
         System.out.print("Introduce el valor acumulado que quieres conseguir: ");
@@ -14,7 +15,7 @@ public class SumarSerieDeNumeros {
 
         while (suma < objetivo) {
             contador++;
-            suma += 1.0 / contador;
+            suma += 1.0 / contador;  //Tambien se puede poner (double), 1D...   o directamente poner el contador como double
         }
         
         System.out.println("Se han necesitado " + contador + " términos para superar el valor " + objetivo);
