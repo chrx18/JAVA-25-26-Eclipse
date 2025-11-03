@@ -23,7 +23,7 @@ public class Ejercicio5 {
 			nuevo = antesDeAnterior + anterior;
 			
 			//lo muestro en pantalla
-			System.out.println(nuevo + " ");
+			System.out.print(nuevo + " ");
 			
 			//me preparo para la vuelta siguiente
 			antesDeAnterior = anterior;
