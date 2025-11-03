@@ -9,23 +9,28 @@ public class Ejercicio4 {
 
 		Scanner sc = new Scanner (System.in);
 		
-		int numero, numeroAnterior;
+		int numero, anterior = -1;
+		boolean repetidos = false; //variable para anotar si han salido números repetidos
 		
-		boolean numerosIguales;
 		
-		
-		System.out.println("Introduce un número: ");
-		numero = sc.nextInt();	
-		
-		while (numero >= 0) {
-			if (numero == numeroAnterior && numeroAnterior != 0) {
-				numerosIguales = true;
-			}
-
+		do {
+			System.out.println("Introduce un número: ");
+			numero = sc.nextInt();
+			//comprobar si el número es igual al que pusieron anteriormente
 			
+			if (numero == anterior) {
+				repetidos = true;
+			}
+			//me preparo para la siguiente vuelta
+			
+			anterior = numero; //el número actual, la siguiente vuelta será el anterior
+			
+		} while (numero >= 0); //repetimos mientras no sea un número negativo
+		
+		if(repetidos == true) {
+			System.out.println("Han salido números repetidos");
+		} else {
+			System.out.println("No han salido números repetidos");
 		}
-		
-		
 	}
-
 }
