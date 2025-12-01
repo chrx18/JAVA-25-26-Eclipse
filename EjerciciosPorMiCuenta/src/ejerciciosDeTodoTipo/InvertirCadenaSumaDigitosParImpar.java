@@ -8,13 +8,11 @@ public class InvertirCadenaSumaDigitosParImpar {
 		// TODO Auto-generated method stub
 		
 		Scanner sc = new Scanner (System.in);
-		int numero, digito, suma = 0, invertido = 0, cadenaOriginal;
+		int numero, digito, suma = 0, invertido = 0;
 		
 		System.out.println("Introduce un número: ");
 		numero = sc.nextInt();
-		
-		
-		cadenaOriginal = numero;
+
 		
 		while (numero > 0) {
 			digito = numero % 10;
