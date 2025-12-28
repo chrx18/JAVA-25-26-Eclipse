@@ -1,4 +1,4 @@
-package ejerciciosDeTodoTipo;
+	package ejerciciosDeTodoTipo;
 
 public class AlternarTextoConForSb {
 
