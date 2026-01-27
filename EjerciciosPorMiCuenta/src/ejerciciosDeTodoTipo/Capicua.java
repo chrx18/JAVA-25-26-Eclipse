@@ -8,28 +8,27 @@ public class Capicua {
 		// TODO Auto-generated method stub
 
 		Scanner sc = new Scanner (System.in);	
-	
-		int numero, numeroOriginal, reverso = 0, resto;
-		
-		System.out.println("Introduce un número para saber si es capicúa: ");
+		int numero, digito, reverso = 0, numeroOriginal = 0;
+
+		System.out.println("Introduce un número: ");
 		numero = sc.nextInt();
 		
 		
 		numeroOriginal = numero;
 		
-		
 		while (numero > 0) {
-			resto = numero % 10;
-			reverso = reverso * 10 + resto;
-			numero = numero / 10;
+			digito = numero % 10;
+			reverso = reverso * 10 + digito;
+			
+			numero /= 10;
 		}
 		
-		if (numeroOriginal == reverso) {
-			System.out.println("El numero es CAPICUA");
-		} else {
-			System.out.println("El numero NO es capicua");
+		if (reverso == numeroOriginal) {
+			System.out.println("Es capicua");
 		}
-		
-	}
+		else {
+			System.out.println("No es capicua");
+		}
 
+	}
 }
